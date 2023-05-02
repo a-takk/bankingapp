@@ -32,6 +32,10 @@ class variables {
 }
 
 public class Menu {
+    public static void main(String[]args) {
+        Menu menu = new Menu();
+        menu.menus();
+    }
     public void menus() {
         String[] button = {"Menu","Add Account", "Remove Account", "Display Account Details",
                 "Withdraw From Account", "Deposit Into Account", "Exit"};
@@ -65,8 +69,8 @@ public class Menu {
                         frame.setVisible(false);
                     }
                     case "Add Account" -> {
-                        AddAccount acc = new AddAccount();
-                        acc.addacc();
+                        AddAccount addacc = new AddAccount();
+                        addacc.addacc();
                         frame.setVisible(false);
                     }
                     case "Remove Account" -> {
@@ -98,10 +102,6 @@ public class Menu {
         frame.setVisible(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Set the default close operation
         frame.setSize(350, 500); // Set the size of the frame
-    }
-    public static void main (String[]args) {
-        Menu menu = new Menu();
-        menu.menus();
     }
 }
 

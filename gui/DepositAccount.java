@@ -10,10 +10,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
 public class DepositAccount extends Banking {
-    public static void main (String[]args) throws Exception {
-        DepositAccount acc = new DepositAccount();
-        acc.depacc();
-    }
     public void depacc() {
         String[] button = {"Menu", "Add Account", "Remove Account", "Display Account Details",
                 "Withdraw From Account", "Deposit Into Account", "Exit"};
@@ -99,8 +95,8 @@ public class DepositAccount extends Banking {
                         frame.setVisible(false);
                     }
                     case "Add Account" -> {
-                        AddAccount acc = new AddAccount();
-                        acc.addacc();
+                        AddAccount addacc = new AddAccount();
+                        addacc.addacc();
                         frame.setVisible(false);
                     }
                     case "Remove Account" -> {

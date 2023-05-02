@@ -7,10 +7,6 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 
 public class RemoveAccount extends Database {
-    public static void main (String[]args) throws Exception {
-        RemoveAccount acc = new RemoveAccount();
-        acc.remacc();
-    }
     public void remacc() {
         String[] button = {"Menu", "Add Account", "Remove Account", "Display Account Details",
                 "Withdraw From Account", "Deposit Into Account", "Exit"};
@@ -72,8 +68,8 @@ public class RemoveAccount extends Database {
                         frame.setVisible(false);
                     }
                     case "Add Account" -> {
-                        AddAccount acc = new AddAccount();
-                        acc.addacc();
+                        AddAccount addacc = new AddAccount();
+                        addacc.addacc();
                         frame.setVisible(false);
                     }
                     case "Remove Account" -> {

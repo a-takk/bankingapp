@@ -8,10 +8,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
 public class DisplayAccount extends Database {
-    public static void main (String[]args) throws Exception {
-        DisplayAccount acc = new DisplayAccount();
-        acc.disacc();
-    }
     public void disacc() {
         variables var = new variables();
         String[] button = {"Menu", "Add Account", "Remove Account", "Display Account Details",
@@ -99,8 +95,8 @@ public class DisplayAccount extends Database {
                         frame.setVisible(false);
                     }
                     case "Add Account" -> {
-                        AddAccount acc = new AddAccount();
-                        acc.addacc();
+                        AddAccount addacc = new AddAccount();
+                        addacc.addacc();
                         frame.setVisible(false);
                     }
                     case "Remove Account" -> {

@@ -7,10 +7,6 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 
 public class AddAccount extends Database {
-        public static void main(String[] args) throws Exception {
-            AddAccount acc = new AddAccount();
-            acc.addacc();
-        }
         public void addacc() {
             variables var = new variables();
             String[] button = {"Menu", "Add Account", "Remove Account", "Display Account Details",

@@ -8,10 +8,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
 public class WithdrawAccount extends Database {
-    public static void main (String[]args) throws Exception {
-        WithdrawAccount acc = new WithdrawAccount();
-        acc.withacc();
-    }
     public void withacc() {
         String[] button = {"Menu", "Add Account", "Remove Account", "Display Account Details",
                 "Withdraw From Account", "Deposit Into Account", "Exit"};
@@ -98,8 +94,8 @@ public class WithdrawAccount extends Database {
                         frame.setVisible(false);
                     }
                     case "Add Account" -> {
-                        AddAccount acc = new AddAccount();
-                        acc.addacc();
+                        AddAccount addacc = new AddAccount();
+                        addacc.addacc();
                         frame.setVisible(false);
                     }
                     case "Remove Account" -> {
