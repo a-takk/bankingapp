@@ -9,7 +9,7 @@ RemoveAccount,
 WithdrawAccount
 
 It inherits the Connection from the getConnection method, and assigns the primitive types from the variable class,
-it assigns a random number from 1000000 to 9999999 which is the users ID, and uses the String first and last to 
+assigns a random number from 1000000 to 9999999 which is the users ID, and uses the String first and last to 
 display the first and last name as well as the ID and balance. 
 
 I've also used Swing to create the frame, panel, button, text fields, then use action listeners which respond when 
